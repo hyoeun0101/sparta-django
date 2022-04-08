@@ -22,11 +22,13 @@ from ninja import NinjaAPI
 
 api = NinjaAPI()
 
+
 @api.get("/add")
-def add(request: HttpRequest, a:int, b:int)-> Dict[str,int]:
-    return {"result": a+b}
+def add(request: HttpRequest, a: int, b: int) -> Dict[str, int]:
+    return {"result": a + b}
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("api/",api.urls),
+    path("admin/", admin.site.urls),
+    path("api/", api.urls),
 ]
