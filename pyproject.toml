@@ -13,6 +13,7 @@ isort = "5.10.1"
 django-ninja = "^0.17.0"
 PyMySQL = "1.0.2"
 types-PyMySQL = "1.0.6"
+click = "8.1.2"
 
 [tool.poetry.dev-dependencies]
 
